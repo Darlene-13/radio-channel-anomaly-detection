@@ -1,4 +1,4 @@
-# Data Dictionary — DSRH 2026 Selection Challenge
+# Data Dictionary: DSRH 2026 Selection Challenge
 
 Each row is one signal **segment** captured on a radio channel. The task is
 binary classification: predict `anomaly` (1 = anomalous segment, 0 = normal).
@@ -30,15 +30,15 @@ binary classification: predict `anomaly` (1 = anomalous segment, 0 = normal).
 
 ## Files
 
-- `train.csv` — 1698 labeled segments. Use this to build and validate your model.
-- `test.csv` — 425 unlabeled segments. Predict `anomaly` for each `id` here.
-- `sample_submission.csv` — template showing the exact submission format
+- `train.csv`: 1698 labeled segments. Use this to build and validate your model.
+- `test.csv`: 425 unlabeled segments. Predict `anomaly` for each `id` here.
+- `sample_submission.csv`: template showing the exact submission format
   (`id,anomaly`, one row per test segment).
 
 ## Notes
 
 - Classes are imbalanced: about 20% of segments are anomalies. A model that
-  always predicts 0 already scores ~80% accuracy but 0% recall on anomalies —
+  always predicts 0 already scores ~80% accuracy but 0% recall on anomalies, 
   this is why the competition is scored on **F1-score**, not accuracy.
 - All 9 channels appear in both `train.csv` and `test.csv`, in roughly the
   same proportions.
