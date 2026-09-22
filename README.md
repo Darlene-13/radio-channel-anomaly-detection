@@ -1,5 +1,4 @@
 # Radio Channel Anomaly Detection
-# DSRH 2026 Radio Anomaly Detection
 
 Binary classification of radio channel signal segments as anomalous or normal, built for the Hack4Dev DSRH 2026 selection challenge.
 
